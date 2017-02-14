@@ -1,0 +1,19 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = element bibliotheque{ livre* }
+
+livre = element livre { 
+attribute langue {xsd:language},
+attribute auteurs {xsd:IDREF},
+titre,annee,prix
+
+}
+
+titre = element titre {text}
+annee = element annee {xsd:gYear}
+prix = element prix { 
+attribute monnaie {text}?,
+mixed {element valeur {xsd:double}}
+}
+
+
