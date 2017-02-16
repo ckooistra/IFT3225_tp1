@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="bibliotheque.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="auteurs.xsl"?>
+<bibliotheque>
+    <livre langue="EN" auteurs="">
+        <titre>
+            
+        </titre>
+        <annee>2012</annee>
+        <prix>
+            <valeur>37</valeur>
+        </prix>        
+        
+    </livre>   
+    
+    <livre langue="">
+        <titre>Words cannot express how much I hate Recherche Opérationelle</titre>
+        <annee>2017</annee>
+        <prix>
+            <valeur>0.07</valeur>
+        </prix>
+    </livre>
+    
+    <livre langue="">
+        <titre></titre>
+        <annee></annee>
+        <prix>
+            <valeur></valeur>
+        </prix>
+    </livre>
+    
+</bibliotheque>

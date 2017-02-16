@@ -1,11 +1,11 @@
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
-start = element bibliotheque{ livre* }
+start = element bibliotheque{ livre*, auteur* }
 
 livre = element livre { 
 attribute langue {xsd:language},
-attribute auteurs {xsd:IDREF}+,
-titre,annee,prix, couverture?, film?,commentaire
+attribute auteurs {xsd:IDREFS}+,
+titre,annee,prix, couverture?, film?,commentaire?
 
 }
 

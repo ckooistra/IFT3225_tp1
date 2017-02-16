@@ -1,7 +1,7 @@
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
 
-start = element auteur {
+auteur = element auteur {
 attribute ident {xsd:ID},
 nomComplet,pays?,photo?,commentaire?
 }
