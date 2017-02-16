@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="bibliotheque.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-stylesheet type="text/xsl" href="auteurs.xsl"?>
+
 <bibliotheque>
-    <livre langue="EN" auteurs="">
+    <livre langue="EN" auteurs="s43">
         <titre>
             
         </titre>
@@ -13,7 +14,7 @@
         
     </livre>   
     
-    <livre langue="">
+    <livre langue="EN" auteurs="s43 s36">
         <titre>Words cannot express how much I hate Recherche Opérationelle</titre>
         <annee>2017</annee>
         <prix>
@@ -21,12 +22,26 @@
         </prix>
     </livre>
     
-    <livre langue="">
+    <livre langue="FR" auteurs="s36">
         <titre></titre>
-        <annee></annee>
+        <annee>2012</annee>
         <prix>
-            <valeur></valeur>
+            <valeur>0</valeur>
         </prix>
     </livre>
+    
+    <auteur ident="s36">
+        <nom>Skywalker</nom>
+        <prenom>Luke</prenom>
+        <pays>Tatooine</pays>
+    </auteur>
+    
+    <auteur ident="s43">
+        <nom>Calrissian</nom>
+        <prenom>Lando</prenom>
+        <pays>Sky City</pays>
+        <commentaire>Lando is the man</commentaire>
+    </auteur>
+    
     
 </bibliotheque>

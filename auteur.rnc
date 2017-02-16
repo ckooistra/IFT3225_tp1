@@ -5,11 +5,3 @@ auteur = element auteur {
 attribute ident {xsd:ID},
 nomComplet,pays?,photo?,commentaire?
 }
-
-nomComplet = element nomComplet {nom&prenom}
-nom = element nom{text}
-prenom = element prenom{text}
-pays = element pays {text}
-photo = element photo {url}
-url = xsd:string {pattern="https+"}
-commentaire = element commentaire {text}

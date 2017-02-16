@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
     version="2.0">
-    
+    <xsl:output method="html"/>
     
     <xsl:template match="/">
         <html>
@@ -20,9 +20,14 @@
                         <th style="text-align:left">Photo</th>
                         <th style="text-align:left">Commentaire</th>
                     </tr>
-
-                    <xsl:for-each select="auteur/cd">
                     
+                    <xsl:for-each select="auteur">
+                        <td><xsl:value-of select="nom"/></td>
+                        <td><xsl:value-of select="prenom"/></td>
+                        <td><xsl:value-of select="pays"/></td>
+                        <td><xsl:value-of select="photo"/></td>
+                        <td><xsl:value-of select="commentraire"/></td>
+                    </xsl:for-each>
                 </table>
             </body>            
         </html>
