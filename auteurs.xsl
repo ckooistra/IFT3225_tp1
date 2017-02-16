@@ -21,12 +21,15 @@
                         <th style="text-align:left">Commentaire</th>
                     </tr>
                     
-                    <xsl:for-each select="auteur">
-                        <td><xsl:value-of select="nom"/></td>
-                        <td><xsl:value-of select="prenom"/></td>
-                        <td><xsl:value-of select="pays"/></td>
-                        <td><xsl:value-of select="photo"/></td>
-                        <td><xsl:value-of select="commentraire"/></td>
+                    <xsl:for-each select="bibliotheque/auteur">
+                        <xsl:sort select="nom"/>
+                        <tr>
+                            <td><xsl:value-of select="nom"/></td>
+                            <td><xsl:value-of select="prenom"/></td>
+                            <td><xsl:value-of select="pays"/></td>
+                            <td><xsl:value-of select="photo"/></td>
+                            <td><xsl:value-of select="commentaire"/></td>
+                        </tr>
                     </xsl:for-each>
                 </table>
             </body>            

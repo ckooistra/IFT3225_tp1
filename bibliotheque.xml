@@ -34,6 +34,7 @@
         <nom>Skywalker</nom>
         <prenom>Luke</prenom>
         <pays>Tatooine</pays>
+        
     </auteur>
     
     <auteur ident="s43">
@@ -43,5 +44,18 @@
         <commentaire>Lando is the man</commentaire>
     </auteur>
     
+    <auteur ident="s33">
+        <nom>Beiber</nom>
+        <prenom>Justin</prenom>
+        <pays>Canada</pays>
+        <commentaire>This guy's an idiot</commentaire>
+    </auteur>
+    
+    <auteur ident="s99">
+        <nom>Gretzky</nom>
+        <prenom>Wayne</prenom>
+        <pays>Canada</pays>
+        <commentaire>I think he party's pretty hard</commentaire>
+    </auteur>
     
 </bibliotheque>
