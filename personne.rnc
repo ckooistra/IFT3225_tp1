@@ -1,10 +1,9 @@
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
 personnage = element personnage {
-nomComplet,pays?,photo?,commentaire?
+(nom&prenom),pays?,photo?,commentaire?
 }
 
-nomComplet = element nomComplet {nom&prenom}
 nom = element nom{text}
 prenom = element prenom{text}
 pays = element pays {text}
