@@ -4,7 +4,8 @@
     exclude-result-prefixes="xs"
     version="2.0">
     <xsl:output  method="html"/>
-    <xsl:param name="nameAuteur" select="''" />
+    
+    <xsl:variable name="color" select="'red'" />
     
     <xsl:template match="/">
         <html>
@@ -12,31 +13,55 @@
             <body>
                 <h2>Auteurs</h2>
                 
-                <table border="1">
+                
+                <xsl:if test="$color='red'">
                     
-                    <tr>
-                        <th style="text-align:left">Nom</th>
-                        <th style="text-align:left">Prenom</th>
-                        <th style="text-align:left">Pays</th>
-                        <th style="text-align:left">Photo</th>
-                        <th style="text-align:left">Commentaire</th>
-                    </tr>
-                    <xsl:if test="$nameAuteur=''">
-                        <xsl:for-each select="bibliotheque/auteur">
-                            <xsl:sort select="nom"/>
-                            <tr>
-                                <td><xsl:value-of select="nom"/></td>
-                                <td><xsl:value-of select="prenom"/></td>
-                                <td><xsl:value-of select="pays"/></td>
-                                <td><xsl:value-of select="photo"/></td>
-                                <td><xsl:value-of select="commentaire"/></td>
-                            </tr>
-                        </xsl:for-each>
-                    </xsl:if>
-                </table>
+                    <xsl:for-each select="auteur">
+                        <xsl:sort select="nom"></xsl:sort>
+                        <tr>
+                            <td><xsl:value-of select="nom"/></td>
+                            <td><xsl:value-of select="prenom"/></td>
+                            <td><xsl:value-of select="pays"/></td>
+                            <td><xsl:value-of select="photo"/></td>
+                            <td><xsl:value-of select="commentaire"/></td>
+                        </tr>               
+                        
+                    </xsl:for-each>
+                   
+                    <table border="1">
+                        
+                        <tr>
+                            <th style="text-align:left">Nom</th>
+                            <th style="text-align:left">Prenom</th>
+                            <th style="text-align:left">Pays</th>
+                            <th style="text-align:left">Photo</th>
+                            <th style="text-align:left">Commentaire</th>
+                        </tr>
+                        <xsl:call-template name="stringVide" />
+                                                   
+                    </table>
+                    
+                </xsl:if>
+                
             </body>            
         </html>
     </xsl:template>
+
+
     
+    <xsl:template match="//auteur" name="stringVide">
+        
+        <xsl:param name="nameAuteur" select="''" />
+        <xsl:for-each select="auteur">
+            <xsl:sort select="nom"></xsl:sort>
+            <tr>
+                <td><xsl:value-of select="nom"/></td>
+                <td><xsl:value-of select="prenom"/></td>
+                <td><xsl:value-of select="pays"/></td>
+                <td><xsl:value-of select="photo"/></td>
+                <td><xsl:value-of select="commentaire"/></td>
+            </tr>
+        </xsl:for-each>
+    </xsl:template>
     
 </xsl:stylesheet>
