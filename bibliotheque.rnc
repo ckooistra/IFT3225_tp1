@@ -11,12 +11,13 @@ titre,annee,prix, couverture?, film?,commentaire?, personnage+
 
 auteur = element auteur {
 attribute ident {xsd:ID},
-(nom&prenom),pays?,photo?,commentaire?
+(nom&prenom),(pays,photo,commentaire)*
 }
 
 
 titre = element titre {text}
 annee = element annee {xsd:gYear}
+
 prix = element prix { 
 attribute monnaie {text}?,
 mixed {element valeur {xsd:double}}

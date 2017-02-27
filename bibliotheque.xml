@@ -5,58 +5,66 @@
 
 <bibliotheque>
     <livre langue="EN" auteurs="s43">
-        <titre>
-            
-        </titre>
+        <titre>Test Title</titre>
         <annee>2012</annee>
         <prix>
             <valeur>37</valeur>
         </prix>        
         
+        <personnage>
+            <nom></nom>
+            <prenom></prenom>
+        </personnage>
     </livre>   
     
-    <livre langue="EN" auteurs="s43 s36">
+    <livre langue="EN" auteurs="s43 s36 s98">
         <titre>Words cannot express how much I hate Recherche Opérationelle</titre>
         <annee>2017</annee>
         <prix>
             <valeur>0.07</valeur>
         </prix>
+        <personnage>
+            <nom>sadfasdf</nom>
+            <prenom>asdfasdfasdf</prenom>
+        </personnage>
     </livre>
     
     <livre langue="FR" auteurs="s36">
-        <titre></titre>
+        <titre>blaasdfs</titre>
         <annee>2012</annee>
         <prix>
             <valeur>0</valeur>
         </prix>
+        <personnage>
+            <nom>asdfasdfasdf</nom>
+            <prenom>asdfasdfasdf</prenom>
+        </personnage>
     </livre>
     
     <auteur ident="s36">
         <nom>Skywalker</nom>
         <prenom>Luke</prenom>
-        <pays>Tatooine</pays>
         
     </auteur>
     
     <auteur ident="s43">
         <nom>Calrissian</nom>
         <prenom>Lando</prenom>
-        <pays>Sky City</pays>
-        <commentaire>Lando is the man</commentaire>
     </auteur>
     
     <auteur ident="s33">
         <nom>Beiber</nom>
         <prenom>Justin</prenom>
-        <pays>Canada</pays>
-        <commentaire>This guy's an idiot</commentaire>
     </auteur>
     
     <auteur ident="s99">
         <nom>Gretzky</nom>
         <prenom>Wayne</prenom>
-        <pays>Canada</pays>
-        <commentaire>I think he party's pretty hard</commentaire>
+
     </auteur>
-    
+    <auteur ident="s98">
+        <nom>Blow</nom>
+        <prenom>Joe</prenom>
+
+    </auteur>
 </bibliotheque>
